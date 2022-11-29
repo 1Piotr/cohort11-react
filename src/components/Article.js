@@ -1,16 +1,13 @@
 import PostcardImage from "./PostcardImage";
 import PostcardText from "./PostcardText";
 
-
-function Postcard({imageSrc, text, title, isDarkMode}) {
+function Article({imageSrc, text, title}) {
     
     return (
-        <div className={`postcard ${isDarkMode ? 'darkmode':''}`}>
+        <div className="article">
             <PostcardImage imageSrc={imageSrc} />
             <PostcardText title={title} text={text} />
-            
         </div>
-        
     )
 }
-export default Postcard;
+export default Article;

@@ -1,11 +1,18 @@
+* {
+  box-sizing: border-box;
+}
 .postcard {
   display: flex;
   flex-direction: row;
   gap: 1rem;
   padding:2rem;
   border: 1px solid gray;
-  width:500px;
-  margin: 1rem;
+  width:100%;
+  
+}
+.postcard.darkmode {
+  background-color:black ;
+  color: aliceblue;
 }
 .postcard__text {
   flex-basis: auto;
@@ -20,3 +27,38 @@
 .postcard__image img {
   width:100%;
 }
+
+.App {
+  display: flex;
+  flex-wrap: wrap;;
+  flex-direction: row;
+  gap:1rem;
+}
+.Col1 {
+  flex-basis: 50%;
+  width:50%;
+}
+.Col2 {
+  flex-basis: 50%;
+  width:50%;
+
+}
+.article {
+  padding:2rem;
+  border: 1px solid gray;
+ margin:1rem;
+}
+.App.darkmode {
+
+background-color:darkblue ;
+  color: aliceblue;
+}
+#myButton {
+  flex-basis:100%;
+}
+
+
+ 
+
+  
+
